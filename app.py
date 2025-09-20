@@ -5,9 +5,10 @@ import sklearn
 import pickle
 
 # importing model
-model = pickle.load(open('model.pkl','rb'))
-sc = pickle.load(open('standscaler.pkl','rb'))
-ms = pickle.load(open('minmaxscaler.pkl','rb'))
+
+model = pickle.load(open('Crop-Recommendation-System/model.pkl','rb'))
+sc = pickle.load(open('Crop-Recommendation-System/standscaler.pkl','rb'))
+ms = pickle.load(open('Crop-Recommendation-System/minmaxscaler.pkl','rb'))
 
 # creating flask app
 app = Flask(__name__)
